@@ -23,15 +23,15 @@ w\:* {behavior:url(#default#VML);}
   <o:Author>Michaloski, John L. (Fed)</o:Author>
   <o:LastAuthor>Michaloski, John L. (Fed)</o:LastAuthor>
   <o:Revision>2</o:Revision>
-  <o:TotalTime>91</o:TotalTime>
-  <o:Created>2020-05-30T15:16:00Z</o:Created>
-  <o:LastSaved>2020-05-30T15:16:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>7006</o:Words>
-  <o:Characters>39935</o:Characters>
-  <o:Lines>332</o:Lines>
+  <o:TotalTime>179</o:TotalTime>
+  <o:Created>2020-06-17T20:24:00Z</o:Created>
+  <o:LastSaved>2020-06-17T20:24:00Z</o:LastSaved>
+  <o:Pages>22</o:Pages>
+  <o:Words>6966</o:Words>
+  <o:Characters>39708</o:Characters>
+  <o:Lines>330</o:Lines>
   <o:Paragraphs>93</o:Paragraphs>
-  <o:CharactersWithSpaces>46848</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>46581</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1378,6 +1378,7 @@ span.GramE
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
 	mso-ascii-font-family:Calibri;
 	mso-ascii-theme-font:minor-latin;
 	mso-fareast-font-family:Calibri;
@@ -1993,7 +1994,7 @@ Clusters</p>
 <p class=MsoNormal><!--[if supportFields]><span style='mso-element:field-begin'></span><span
 style='mso-spacerun:yes'> </span>DATE \@ &quot;dddd, MMMM dd, yyyy&quot; <span
 style='mso-element:field-separator'></span><![endif]--><span style='mso-no-proof:
-yes'>Saturday, May 30, 2020</span><!--[if supportFields]><span
+yes'>Wednesday, June 17, 2020</span><!--[if supportFields]><span
 style='mso-element:field-end'></span><![endif]--></p>
 
 <p class=MsoNormal>The development of an AI DNN model requires specifying
@@ -2036,8 +2037,8 @@ concerns. First, the computers must communicate across a network. Scheduling of
 parallel execution, and synchronization of results must be available for the
 programmer. Specifying the scheduling and cluster of computers to communicate
 with and perform computation must be available.<span style='mso-spacerun:yes'> 
-</span>Other features like handling errors, cloud deployment and supporting a variety
-of existing parallel HPC tools are important considerations in parallel
+</span>Other features like handling errors, cloud deployment and supporting a
+variety of existing parallel HPC tools are important considerations in parallel
 computing. </p>
 
 <p class=MsoNormal>This tutorial covers hyperparameter tuning in a parallel
@@ -2599,8 +2600,8 @@ install -U ray [dashboard]</p>
 </div>
 
 <p class=MsoNormal>If you are not using the latest Ray python version, <u>you
-must download a wheel to install</u>, for example, pip install of the Python 3.6
-shown below.</p>
+must download a wheel to install</u>, for example, pip install of the Python
+3.6 shown below.</p>
 
 <div style='mso-element:para-border-div;border:solid #2F6FAB 1.0pt;mso-border-alt:
 solid #2F6FAB .5pt;padding:12.0pt 12.0pt 12.0pt 9.0pt;background:#F9F9F9;
@@ -3140,8 +3141,8 @@ class=SpellE>file_mounts</span>: {</p>
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'>#<span
 style='mso-spacerun:yes'>    </span>&quot;/path1/on/remote/machine&quot;:
-&quot;/path1/on/local/machine&quot;, # <span
-style='mso-spacerun:yes'>   </span>&quot;/path2/on/remote/machine&quot;:
+&quot;/path1/on/local/machine&quot;, #<span style='mso-spacerun:yes'>   
+</span>&quot;/path2/on/remote/machine&quot;:
 &quot;/path2/on/local/machine&quot;<span class=GramE>, }</span></p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
@@ -3258,8 +3259,8 @@ to the cluster. You must have a space after the &quot;:&quot; delimiter or the
 Key and Value are combined(!) into one key. You can check what is happening
 after reading and interpreting your YAML configuration file, by examining the
 file ~/<span class=SpellE>ray_bootstrap_<span class=GramE>config.yaml</span></span>.
-That's how I found this feature. It's unclear if this even works or helps, but
-someone on the Internet did it, and it seemed like a good idea.</p>
+That's how I found this feature. It's unclear if this even works or helps, but someone
+on the Internet did it, and it seemed like a good idea.</p>
 
 <div style='mso-element:para-border-div;border:solid #2F6FAB 1.0pt;mso-border-alt:
 solid #2F6FAB .5pt;padding:12.0pt 12.0pt 12.0pt 9.0pt;background:#F9F9F9;
@@ -3330,8 +3331,8 @@ class=GramE>bin:$</span>PATH&quot;' &gt;&gt; ~/.<span class=SpellE>bashrc</span>
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
 style='mso-spacerun:yes'> </span>&nbsp;&nbsp;&nbsp; - source /<span
 class=SpellE>usr</span>/local/anaconda3/<span class=SpellE>etc</span>/<span
-class=SpellE>profile.d</span>/conda.sh; <span class=SpellE>conda</span> activate
-py37</p>
+class=SpellE>profile.d</span>/conda.sh; <span class=SpellE>conda</span>
+activate py37</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
@@ -3450,8 +3451,8 @@ the command line (using ray up), </p>
 <p class=MsoListParagraphCxSpLast style='text-indent:-.25in;mso-list:l5 level1 lfo7'><![if !supportLists]><span
 style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style='mso-list:Ignore'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>importing the ray module into the Python program,
-and </p>
+</span></span></span><![endif]>importing the ray module into the Python
+program, and </p>
 
 <div style='mso-element:para-border-div;border:solid #2F6FAB 1.0pt;mso-border-alt:
 solid #2F6FAB .5pt;padding:12.0pt 12.0pt 12.0pt 9.0pt;background:#F9F9F9;
@@ -3574,8 +3575,8 @@ of Python interpreter and modules.</p>
   padding:0in 5.4pt 0in 5.4pt'>
   <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
   normal'><span class=SpellE>scikit</span>-learn<span
-  style='mso-spacerun:yes'>                         </span><span
-  style='mso-spacerun:yes'>                                          </span></p>
+  style='mso-spacerun:yes'>                                                                  
+  </span></p>
   </td>
   <td width=180 valign=top style='width:135.0pt;border-top:none;border-left:
   none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
@@ -3633,7 +3634,8 @@ machine learning to non-specialists <w:Sdt Citation="t" ID="-2122289672"><!--[if
  style='mso-element:field-end'></span><![endif]--></w:Sdt>. The automated
 machine learning packages used from sci-kit optimize were: <span class=SpellE>RandomizedSearchCV</span>,
 <span class=SpellE>GridSearchCV</span>, and Bayesian Search.<span
-style='mso-spacerun:yes'>   </span>Examples of various application of <span
+style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'> </span>Examples of various application of <span
 class=SpellE>sklearn</span> optimization can be found <a
 href="https://www.programcreek.com/python/example/91146/sklearn.model_selection.RandomizedSearchCV">here</a>.<span
 style='mso-spacerun:yes'>  </span><span class=SpellE>RandomizedSearchCV</span>
@@ -3649,10 +3651,11 @@ href="https://scikit-learn.org/stable/modules/grid_search.html#grid-search">here
 <p class=MsoNormal><span class=SpellE>Scikit</span>-learn does leverage
 performance opportunities on the current machine to minimize the computation
 required of hyperparameter searching. <span class=SpellE>Scikit</span>-learn
-exploits concurrency on the current machine by using all the cores through parallelism
-using the Python <span class=SpellE>joblib</span> package. <span class=SpellE>Joblib</span>
-instantiates jobs that run on multiple CPU cores. The parallelism of these jobs
-is limited by the number of CPU cores available on that node.</p>
+exploits concurrency on the current machine by using all the cores through
+parallelism using the Python <span class=SpellE>joblib</span> package. <span
+class=SpellE>Joblib</span> instantiates jobs that run on multiple CPU cores.
+The parallelism of these jobs is limited by the number of CPU cores available
+on that node.</p>
 
 <p class=MsoNormal>However, <span class=SpellE>Scikit</span>-Learn parallelism
 is adaptable by just changing the <span class=SpellE>joblib's</span> backend. <span
@@ -3727,8 +3730,7 @@ class=GramE>=[</span>5, 20, 100],</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>    </span><span
-style='mso-spacerun:yes'>              </span><span class=SpellE>learningrate</span><span
+style='mso-spacerun:yes'>                  </span><span class=SpellE>learningrate</span><span
 class=GramE>=[</span>0.01, 0.001],</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
@@ -3775,7 +3777,8 @@ mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>    </span># https://medium.com/swlh/hyper-parameter-tuning-for-keras-models-with-scikit-learn-library-dba47cf41551</p>
+style='mso-spacerun:yes'>    </span>#
+https://medium.com/swlh/hyper-parameter-tuning-for-keras-models-with-scikit-learn-library-dba47cf41551</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
@@ -3792,8 +3795,7 @@ style='mso-spacerun:yes'>                        </span>refit=True,</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'> </span><span
-style='mso-spacerun:yes'>                       </span>cv=3,</p>
+style='mso-spacerun:yes'>                        </span>cv=3,</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
@@ -4021,8 +4023,8 @@ being clueless on the time until completion. This oblivious is especially
 annoying as there is no checkpoint mechanism to stop/resume a <span
 class=SpellE>sklearn</span> hyperparameter search so once the search is
 underway you must wait until done or abort the search.<span
-style='mso-spacerun:yes'>  </span>An example of lengthily <span class=GramE>duration
-<span style='mso-spacerun:yes'> </span>required</span> of exhaustive ML
+style='mso-spacerun:yes'>  </span>An example of lengthily <span class=GramE>duration<span
+style='mso-spacerun:yes'>  </span>required</span> of exhaustive ML
 hyperparameter even for a mundane evaluation is given in the FAQ section. <span
 style='mso-spacerun:yes'>  </span></p>
 
@@ -4038,10 +4040,10 @@ class=SpellE>RLlib</span>, a scalable reinforcement learning library. </p>
 
 <p class=MsoNormal>Ray Tune-<span class=SpellE>sklearn</span><span
 style='mso-spacerun:yes'>  </span>is a package that integrates Ray Tune's
-hyperparameter tuning and <span class=SpellE>scikit-learn's</span> models,
-allowing users to optimize <span class=SpellE>hyerparameter</span> searching
-for <span class=SpellE>sklearn</span> using Tune's schedulers (more details
-found <a href="https://github.com/ray-project/tune-sklearn">here</a>). Tune-<span
+hyperparameter tuning and <span class=SpellE>scikit-learn's</span> models, allowing
+users to optimize <span class=SpellE>hyerparameter</span> searching for <span
+class=SpellE>sklearn</span> using Tune's schedulers (more details found <a
+href="https://github.com/ray-project/tune-sklearn">here</a>). Tune-<span
 class=SpellE>sklearn</span> provides additional benefits if specifying a
 scheduler with an estimator that <b>supports early stopping</b>. The list of
 estimators that can be supported from <span class=SpellE>scikit</span>-learn
@@ -4167,11 +4169,9 @@ class=SpellE>chown</span> -R <span class=SpellE><span class=GramE>ownername:grou
 </div>
 
 <p class=MsoNormal style='margin-left:.5in'>For more details see&nbsp;<a
-href="https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html"
-style='font-style:inherit;font-variant:inherit;font-weight:inherit;font-stretch: inherit;
-line-height:inherit;box-sizing: inherit;cursor:pointer'><span style='font-size:
-11.5pt;line-height:107%;font-family:"inherit",serif;mso-bidi-font-family:Arial;
-color:#50AEC6'>here.</span></a><o:p></o:p></p>
+href="https://www.gnu.org/software/coreutils/manual/html_node/chown-invocation.html"><span
+style='font-size:11.5pt;line-height:107%;font-family:"inherit",serif;
+mso-bidi-font-family:Arial;color:#50AEC6'>here.</span></a></p>
 
 <p class=MsoListParagraph style='text-indent:-.25in;mso-list:l1 level1 lfo9'><![if !supportLists]><span
 style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
@@ -4449,10 +4449,10 @@ style='color:#1750EB'>1024</span>, <span class=SpellE>numrows</span>],</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>          </span><span
-style='mso-spacerun:yes'>    </span><span class=SpellE><span style='color:#660099'>numneurons</span></span><span
-class=GramE>=[</span><span style='color:#1750EB'>10</span>, <span
-style='color:#1750EB'>64</span>, <span style='color:#1750EB'>1024</span>],</p>
+style='mso-spacerun:yes'>              </span><span class=SpellE><span
+style='color:#660099'>numneurons</span></span><span class=GramE>=[</span><span
+style='color:#1750EB'>10</span>, <span style='color:#1750EB'>64</span>, <span
+style='color:#1750EB'>1024</span>],</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
@@ -4494,11 +4494,11 @@ list elements, it is an AND of the two elements, which corresponds to a
 multiplication, e.g., N1xN2</p>
 
 <p class=MsoNormal>The number of combinations corresponds to the multiplication
-of the number of elements in each dictionary list element, i.e., 2x3x4x3x3x1x3x1=648
-alternative hyperparameter options. You can double check this number of
-combinations using <span class=SpellE>scikit</span> learn (<span class=SpellE>sklearn</span>)
-<span class=SpellE>ParameterGrid</span> class which constructs a list of
-alternatives from the given param dictionary list.</p>
+of the number of elements in each dictionary list element, i.e.,
+2x3x4x3x3x1x3x1=648 alternative hyperparameter options. You can double check
+this number of combinations using <span class=SpellE>scikit</span> learn (<span
+class=SpellE>sklearn</span>) <span class=SpellE>ParameterGrid</span> class
+which constructs a list of alternatives from the given param dictionary list.</p>
 
 <div style='mso-element:para-border-div;border:solid #2F6FAB 1.0pt;mso-border-alt:
 solid #2F6FAB .5pt;padding:12.0pt 12.0pt 12.0pt 9.0pt;background:#F9F9F9;
@@ -4653,8 +4653,7 @@ end - <span class=SpellE><span class=GramE><span style='color:#94558D'>self</spa
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>       </span><span
-style='mso-spacerun:yes'> </span>hours, rem = <span class=SpellE><span
+style='mso-spacerun:yes'>        </span>hours, rem = <span class=SpellE><span
 class=GramE><span style='color:navy'>divmod</span></span></span><span
 class=GramE>(</span>end - <span class=SpellE><span style='color:#94558D'>self</span>.start</span>,
 <span style='color:#1750EB'>3600</span>)</p>
@@ -4681,8 +4680,8 @@ mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>        </span><span class=SpellE><span class=GramE><span
-style='color:#94558D'>self</span>.stats</span>.append</span>(<span
+style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'>     </span><span
+class=SpellE><span class=GramE><span style='color:#94558D'>self</span>.stats</span>.append</span>(<span
 class=SpellE><span style='color:#94558D'>self</span>.model.optimizer.__class__.<span
 style='color:#B200B2'>__name</span></span><span style='color:#B200B2'>__</span>)</p>
 
@@ -4691,8 +4690,7 @@ mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>    </span><span style='mso-spacerun:yes'>    </span>#
-<span class=SpellE><span class=GramE>self.stats</span>.append</span>(str(<span
+style='mso-spacerun:yes'>        </span># <span class=SpellE><span class=GramE>self.stats</span>.append</span>(str(<span
 class=SpellE>self.params</span>['activation']))</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
@@ -4719,8 +4717,7 @@ class=SpellE><span style='color:#94558D'>self</span>.model.trainable_weights</sp
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'>     </span><span style='mso-spacerun:yes'>   </span>#
-<span class=SpellE><span class=GramE>self.stats</span>.append</span>(str(<span
+style='mso-spacerun:yes'>        </span># <span class=SpellE><span class=GramE>self.stats</span>.append</span>(str(<span
 class=SpellE>self.params</span>['<span class=SpellE>learningrate</span>']))</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
@@ -4837,17 +4834,17 @@ can pass refit=False to prevent that from happening.</p>
 Learn <span class=SpellE>GridSearchCV</span> without cross validation (e.g.,
 unsupervised learning) <o:p></o:p></span></p>
 
-<p class=MsoNormal>Cross-validation (CV) is a technique for evaluating ML
-models by training several ML models on subsets of the available input data and
+<p class=MsoNormal>Cross-validation (CV) is a technique for evaluating ML models
+by training several ML models on subsets of the available input data and
 evaluating them on the complementary subset of the data. <span
 style='mso-spacerun:yes'> </span>The main reason CV is used is to prevent
-overfitting. Timing can be a consideration when using CV. For instance, if
-every training fit takes 10 minutes and you have a <span class=GramE>6 fold</span>
+overfitting. Timing can be a consideration when using CV. For instance, if every
+training fit takes 10 minutes and you have a <span class=GramE>6 fold</span>
 cross-validation, it will take an hour to evaluate one ML model. <span
 class=GramE>As<span style='mso-spacerun:yes'>  </span>overfitting</span> does
-not appear to be a concern and hyperparameter fitting takes 4.5 days per train,
-<span style='mso-spacerun:yes'> </span>CV equal to one was desired to reduce
-the computational complexity.</p>
+not appear to be a concern and hyperparameter fitting takes 4.5 days per
+train,<span style='mso-spacerun:yes'>  </span>CV equal to one was desired to
+reduce the computational complexity.</p>
 
 <p class=MsoNormal>From <a
 href="https://stackoverflow.com/questions/44636370/scikit-learn-gridsearchcv-without-cross-validation-unsupervised-learning">here</a>
@@ -4989,8 +4986,8 @@ class=SpellE>model_dir</span>&quot;]+&quot;logs/fit/&quot;)):</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
-style='mso-spacerun:yes'> </span><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>shutil.rmtree</span></span>(<span class=SpellE>checkpoint_dir</span>)</p>
+style='mso-spacerun:yes'>     </span><span class=SpellE><span class=GramE>shutil.rmtree</span></span>(<span
+class=SpellE>checkpoint_dir</span>)</p>
 
 <p class=BoxedCode style='margin-left:0in;background:#F9F9F9;border:none;
 mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0pt 9.0pt'><span
@@ -5209,22 +5206,6 @@ mso-border-alt:solid #2F6FAB .5pt;padding:0in;mso-padding-alt:12.0pt 12.0pt 12.0
 installed keract-3.1.0</p>
 
 </div>
-
-<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
-
-<p class=MsoPlainText><o:p>&nbsp;</o:p></p>
-
-<pre style='background:white'><span style='font-family:"JetBrains Mono",serif;
-color:#080808'><o:p>&nbsp;</o:p></span></pre>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal>Notes on running on Enki </p>
-
-<p class=MsoNormal><a
-href="https://stackoverflow.com/questions/38601026/easy-way-to-use-parallel-options-of-scikit-learn-functions-on-hpc">https://stackoverflow.com/questions/38601026/easy-way-to-use-parallel-options-of-scikit-learn-functions-on-hpc</a></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
